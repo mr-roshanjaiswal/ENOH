@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome Cutie 💕</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #0b0b1a, #1a0f2e);
+      color: white;
+      overflow: hidden;
+      height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    header h1 {
+      font-size: 3em;
+      color: #ff99cc;
+      text-shadow: 0 0 15px #ff66b2, 0 0 25px #ff33cc;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #ffccee;
+      margin-top: 10px;
+      opacity: 0.8;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff66cc; }
+      to { text-shadow: 0 0 25px #ff99ff, 0 0 35px #ff66ff; }
+    }
+
+    /* Rotated Banner */
+    .banner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+      z-index: 2;
+      position: relative;
+      overflow: hidden;
+      height: 250px; /* Adjust height to fit the rotated image */
+    }
+
+    .banner img {
+      height: 100%;
+      border-radius: 20px;
+      box-shadow: 0 0 30px #ff66cc;
+      transform: rotate(-90deg);
+      transition: transform 0.5s ease-in-out;
+      width: 500px;
+      
+    }
+
+    .content {
+      display: flex;
+      height: 50vh;
+      padding: 20px;
+      z-index: 2;
+      position: relative;
+    }
+
+    .left, .right {
+      padding: 20px;
+      border-radius: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .left {
+      width: 30%;
+      background: rgba(255, 182, 193, 0.15);
+      margin-right: 10px;
+      box-shadow: 0 0 20px #ff99cc;
+    }
+
+    .right {
+      width: 70%;
+      background: rgba(255, 105, 180, 0.15);
+      box-shadow: 0 0 25px #ff33cc;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .wish {
+      margin: 20px 0;
+      font-size: 1.1em;
+      animation: floatUp 5s ease-in-out infinite;
+    }
+
+    .wish:nth-child(odd) {
+      animation-delay: 1s;
+      color: #ffb6c1;
+    }
+
+    .wish:nth-child(even) {
+      color: #ffccff;
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    /* Floating hearts */
+    .heart {
+      position: absolute;
+      bottom: -10px;
+      width: 20px;
+      height: 20px;
+      background: pink;
+      opacity: 0.7;
+      transform: rotate(45deg);
+      animation: float 6s linear infinite;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: pink;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: 10px;
+      top: 0;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) rotate(45deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-800px) rotate(45deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome Cutie 💖</h1>
+    <p>It’s been a long seeing you...</p>
+  </header>
+
+  <div class="banner">
+    <img src="https://i.ibb.co/bjkwQBHf/banner.jpg" alt="Cute Banner">
+  </div>
+
+  <div class="content">
+    <div class="left">
+      <div class="wish">🎈 Wishing you a day full of smiles and sunshine! ☀️</div>
+      <div class="wish">🎂 You deserve all the sweetness today! 🍰</div>
+      <div class="wish">💖 Stay as adorable as ever, my cutie! 🌸</div>
+      <div class="wish">🎉 Happy Birthday to the sweetest soul! ✨</div>
+      <div class="wish">🎉 May your heart be filled with laughter and joy! 💕</div>
+      <div class="wish">🌈 You're the sparkle that makes every moment special! 💖</div>
+      <div class="wish">🎁 Sending love, hugs, and magical wishes your way! 💌</div>
+      <div class="wish">🎉 Happy Birthday to the sweetest soul! ✨</div>
+      <div class="wish">🎉 May your heart be filled with laughter and joy! 💕</div>
+
+   
+
+    </div>
+
+    <div class="right">
+      <div class="wish">💫 Happy Birthday to the sweetest soul! ✨</div>
+      <div class="wish">🎉 May your heart be filled with laughter and joy! 💕</div>
+      <div class="wish">🌈 You're the sparkle that makes every moment special! 💖</div>
+      <div class="wish">🎁 Sending love, hugs, and magical wishes your way! 💌</div>
+      <div class="wish">🎉 Happy Birthday to the sweetest soul! ✨</div>
+      <div class="wish">🎉 May your heart be filled with laughter and joy! 💕</div>
+      <div class="wish">🌈 You're the sparkle that makes every moment special! 💖</div>
+      <div class="wish">🎉 Happy Birthday to the sweetest soul! ✨</div>
+      <div class="wish">🎉 May your heart be filled with laughter and joy! 💕</div>
+      <div class="wish">🌈 You're the sparkle that makes every moment special! 💖</div>
+
+
+    </div>
+  </div>
+
+  <script>
+    // Floating heart balloons animation
+    const body = document.body;
+
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.style.left = Math.random() * window.innerWidth + 'px';
+      heart.style.animationDuration = 4 + Math.random() * 4 + 's';
+      heart.style.background = ['#ff99cc', '#ff66b2', '#ffb6c1'][Math.floor(Math.random() * 3)];
+      body.appendChild(heart);
+      setTimeout(() => heart.remove(), 8000);
+    }
+
+    setInterval(createHeart, 300);
+  </script>
+</body>
+</html>
